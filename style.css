@@ -777,3 +777,28 @@ footer {
     .contact-container { flex-direction: column; }
     .contact-info h2 { font-size: 2.2rem; }
 }
+/* --- Mobile Optimization for All Cards --- */
+@media (max-width: 600px) {
+    /* Home Stats, Tools, এবং Expertise সব কার্ডের জন্য */
+    .stats-grid, .tools-grid, .expertise-grid {
+        grid-template-columns: repeat(2, 1fr) !important; /* মোবাইলে এক লাইনে ২টা করে কার্ড দেখাবে */
+        gap: 10px !important; /* মাঝখানের ফাঁকা জায়গা কমাবে */
+        padding: 0 10px;
+    }
+
+    .stat-box, .tool-box, .skill-box {
+        padding: 15px 10px !important; /* কার্ডের ভেতরের জায়গা কমাবে */
+    }
+
+    .stat-box h3 {
+        font-size: 1.2rem !important; /* সংখ্যা বা টাইটেল ছোট করবে */
+    }
+
+    .stat-box p, .tool-box span, .skill-box p {
+        font-size: 0.75rem !important; /* নিচের ছোট লেখাগুলো আরও ছোট করবে */
+    }
+
+    .stat-box i, .tool-box i, .skill-box i {
+        font-size: 18px !important; /* আইকনগুলো ছোট করবে */
+    }
+}
