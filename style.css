@@ -801,4 +801,29 @@ footer {
     .stat-box i, .tool-box i, .skill-box i {
         font-size: 18px !important; /* আইকনগুলো ছোট করবে */
     }
+
+    
+    /* Modern Web Solutions কার্ড ছোট করার জন্য */
+    .approach-card {
+        padding: 20px !important;
+        margin: 10px 0 !important;
+        text-align: center;
+    }
+
+    .approach-card h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* My Workflow সেকশনের হেডার এবং টেক্সট ছোট করার জন্য */
+    .work-process .section-title {
+        font-size: 1.6rem !important;
+    }
+
+    .work-process p {
+        font-size: 0.85rem !important;
+        padding: 0 10px;
+        line-height: 1.5;
+    }
+
 }
