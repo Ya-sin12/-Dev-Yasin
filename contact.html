@@ -90,6 +90,13 @@
         </div>
     </div>
 </footer>
+<script>
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-links');
 
+    menu.addEventListener('click', function() {
+        menuLinks.classList.toggle('active');
+    });
+</script>s
 </body>
 </html>
