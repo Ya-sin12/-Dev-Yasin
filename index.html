@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasin | Premium Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Premium Navbar -->
+    <header>
+        <nav class="container">
+            <div class="logo"><span>&lt;/&gt;</span> Dev<span> Yasin</span></div>
+            <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <!-- Premium Hero Section -->
+    <section class="hero container">
+        <div class="hero-text">
+            <span class="badge">Creative Web Developer</span>
+            <h1>Crafting Modern<span>Web Interfaces.</span></h1>
+            <p>Specializing in HTML, CSS, and JavaScript to build high-performance websites.</p>
+            <div class="btns">
+                <a href="projects.html" class="b-p">View Projects</a>
+                <a href="contact.html" class="b-s">Let's Talk</a>
+            </div>
+        </div>
+        <div class="hero-img">
+            <!-- image name: yasin.jpg) -->
+            <img src="yasin.png" alt="Yasin">
+        </div>
+    </section>
+    <section class="home-stats container">
+    <div class="stats-grid">
+        <!-- কোডিং টাইম -->
+        <div class="stat-box">
+            <h3>500+</h3>
+            <p>Hours of Coding</p>
+        </div>
+        <!-- প্রজেক্ট সংখ্যা -->
+        <div class="stat-box">
+            <h3>15+</h3>
+            <p>Projects Finished</p>
+        </div>
+        <!-- ওয়ার্ডপ্রেস স্পেশালিটি -->
+        <div class="stat-box">
+            <i class="fab fa-wordpress"></i>
+            <h3>WP Expert</h3>
+            <p>Elementor Specialist</p>
+        </div>
+    </div>
+</section>
+
+<!-- ছোট ইউনিক সেকশন: My Approach -->
+<section class="approach-sec container">
+    <div class="approach-card">
+        <h2>Modern Web <span>Solutions.</span></h2>
+        <p>I don't just build websites; I ensure they load fast and look premium. I specialize in creating pixel-perfect designs specifically using Elementor.</p>
+    </div>
+</section>
+<!-- How I Work Section -->
+<section class="work-process container">
+    <div class="section-header">
+        <h2 class="section-title">My <span>Workflow.</span></h2>
+        <p>I complete your project in 3 simple and professional steps.</p>
+    </div>
+    
+    <div class="process-grid">
+        <!-- Step 1 -->
+        <div class="process-box">
+            <div class="step-num">1</div>
+            <h4>Planning</h4>
+            <p>I understand your requirements to create a modern layout and choose a premium color palette.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-box">
+            <div class="step-num">2</div>
+            <h4>Development</h4>
+            <p>Using WordPress and Elementor, I build a fast, pixel-perfect, and highly functional website.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-box">
+            <div class="step-num">3</div>
+            <h4>Delivery</h4>
+            <p>I deliver a fully responsive, clean, and tested website ready to launch your business online.</p>
+        </div>
+    </div>
+</section>
+    <!-- Premium Footer -->
+    <footer>
+    <div class="container f-box">
+        <div class="f-logo">
+            Dev<span>Yasin</span>
+        </div>
+        <p>&copy; 2026 Crafted by Yasin</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+<script>
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-links');
+
+    menu.addEventListener('click', function() {
+        menuLinks.classList.toggle('active');
+    });
+</script>s
+
+</body>
+</html>
