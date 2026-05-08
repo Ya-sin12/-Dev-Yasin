@@ -315,14 +315,7 @@ nav {
     .hero-text { text-align: center; }
     .hero-img { justify-content: center; margin-bottom: 30px; }
     .hero-img img { width: 250px; height: 250px; }
-    .stats-grid { 
-        grid-template-columns: repeat(2, 1fr) !important; 
-        gap: 15px !important;
-      
-    }
-    .stat-box { padding: 15px !important; }
-    .stat-box h3 { font-size: 1.5rem !important; }
-}
+   }
 
 /* --- premium button and footer --- */
 .btns { display: flex; gap: 15px; }
