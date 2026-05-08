@@ -302,7 +302,10 @@ nav {
 }
 
 /* ৪. মোবাইল রেসপন্সিভ */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero h1 { font-size: 2.5rem; }
+    .hero p { font-size: 1rem; }
     .hero {
         flex-direction: column-reverse; /* মোবাইলে ইমেজ আগে আসবে */
         height: auto;
@@ -312,6 +315,12 @@ nav {
     .hero-text { text-align: center; }
     .hero-img { justify-content: center; margin-bottom: 30px; }
     .hero-img img { width: 250px; height: 250px; }
+    .stats-grid { 
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 15px !important;
+    }
+    .stat-box { padding: 15px !important; }
+    .stat-box h3 { font-size: 1.5rem !important; }
 }
 
 /* --- premium button and footer --- */
@@ -377,12 +386,6 @@ footer {
 }
 
 
-/* --- Mobile Responsiv --- */
-@media (max-width: 768px) {
-    .nav-links { display: none; }
-    .hero h1 { font-size: 2.5rem; }
-    .hero p { font-size: 1rem; }
-}
 /* ১. ব্লার এবং স্লাইড অ্যানিমেশন (Trending) */
 @keyframes reveal {
     0% { 
