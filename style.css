@@ -492,7 +492,9 @@ footer {
     padding: 30px 20px;         /* বক্সের ভেতরের খালি জায়গা */
     border-radius: 24px;        /* কোণা গোল করার জন্য */
     border: 1px solid #1e293b;  /* বর্ডার */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* ছায়া */
+    margin-left: 15px !important;  /* বাম পাশে ১৫ পিক্সেল গ্যাপ */
+    margin-right: 15px !important; /* ডান পাশে ১৫ পিক্সেল গ্যাপ */
+    width: auto !important;        /* বক্সটি যেন স্ক্রিনের বাইরে না যায় */
 }
 
 /* ছবির স্টাইল */
