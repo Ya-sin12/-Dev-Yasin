@@ -318,6 +318,7 @@ nav {
     .stats-grid { 
         grid-template-columns: repeat(2, 1fr) !important; 
         gap: 15px !important;
+        padding: 0 20px !important;
     }
     .stat-box { padding: 15px !important; }
     .stat-box h3 { font-size: 1.5rem !important; }
