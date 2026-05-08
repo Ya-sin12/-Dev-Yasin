@@ -489,7 +489,7 @@ footer {
     margin-bottom: 80px;
     /* --- নিচের এই লাইনগুলো নতুন যোগ হবে --- */
     background: #0f172a;        /* বক্সের ডার্ক কালার */
-    padding: 50px 40px;         /* বক্সের ভেতরের খালি জায়গা */
+    padding: 30px 20px;         /* বক্সের ভেতরের খালি জায়গা */
     border-radius: 24px;        /* কোণা গোল করার জন্য */
     border: 1px solid #1e293b;  /* বর্ডার */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* ছায়া */
