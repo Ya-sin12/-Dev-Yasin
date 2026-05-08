@@ -183,20 +183,20 @@ nav {
 }
 /* --- Home Stats Styling --- */
 .home-stats {
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
     text-align: center;
 }
 
 .stat-box {
     background: #0f172a;
-    padding: 30px;
-    border-radius: 15px;
+    padding: 20px;
+    border-radius: 10px;
     border: 1px solid #1e293b;
     transition: 0.3s;
 }
@@ -255,7 +255,7 @@ nav {
 
 .process-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
     margin-top: 40px;
 }
