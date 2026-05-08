@@ -315,6 +315,15 @@ nav {
     .hero-text { text-align: center; }
     .hero-img { justify-content: center; margin-bottom: 30px; }
     .hero-img img { width: 250px; height: 250px; }
+    .stats-grid {
+    grid-template-columns: 1fr !important; /* মোবাইলে ১টি কলামে দেখাবে */
+    gap: 15px !important; /* গ্যাপ একটু কমিয়ে দেওয়া হলো */
+    padding: 0 20px !important; /* দুই পাশে সুন্দর গ্যাপ থাকবে */
+}
+
+.stat-box {
+    padding: 20px !important; /* বক্সের সাইজ মোবাইলের জন্য পারফেক্ট করবে */
+}
    }
 
 /* --- premium button and footer --- */
