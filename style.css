@@ -225,12 +225,12 @@ nav {
 
 /* --- Approach Section --- */
 .approach-sec {
-    padding: 40px 0 80px;
+    padding: 30px 0 70px;
 }
 
 .approach-card {
     background: linear-gradient(145deg, #0f172a, #1e293b);
-    padding: 50px;
+    padding: 40px;
     border-radius: 20px;
     text-align: center;
     border: 1px solid #334155;
