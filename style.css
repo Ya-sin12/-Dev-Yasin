@@ -315,20 +315,13 @@ nav {
     .hero-text { text-align: center; }
     .hero-img { justify-content: center; margin-bottom: 30px; }
     .hero-img img { width: 250px; height: 250px; }
-    .stats-grid {
-    grid-template-columns: 1fr !important; /* মোবাইলে ১টি কলামে দেখাবে */
-    gap: 15px !important; /* গ্যাপ একটু কমিয়ে দেওয়া হলো */
-    padding: 0 20px !important; /* দুই পাশে সুন্দর গ্যাপ থাকবে */
+    .approach-card, .process-box, .stat-box {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
 }
 
-.stat-box {
-    padding: 20px !important; /* বক্সের সাইজ মোবাইলের জন্য পারফেক্ট করবে */
-}
-    .approach-card {
-    margin: 0 20px !important; /* দুই পাশে ২০ পিক্সেল গ্যাপ তৈরি করবে */
-    padding: 30px 20px !important; /* ভেতরের লেখাগুলোকেও সুন্দর গ্যাপে রাখবে */
-    width: auto !important; /* যেন স্ক্রিনের বাইরে চলে না যায় */
-}
+    
    }
 
 /* --- premium button and footer --- */
