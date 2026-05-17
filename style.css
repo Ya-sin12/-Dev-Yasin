@@ -177,6 +177,7 @@ nav {
     width: 380px;              /* সাইজ বড় বা ছোট করতে পারেন */
     height: 380px;
     object-fit: cover;
+    object-position: center top;
     border-radius: 50%;        /* গোল করার জন্য */
     border: 5px solid #2563eb; /* লোগোর নীল বর্ডার */
     box-shadow: 0 0 40px rgba(37, 99, 235, 0.3);
