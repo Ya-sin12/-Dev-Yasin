@@ -422,6 +422,202 @@ nav {
         grid-template-columns: 1fr; /* মোবাইলে একটির নিচে আরেকটি */
     }
 }
+/* Pricing Calculator Styling */
+.calculator-sec {
+    padding: 80px 0;
+    color: #ffffff;
+}
+
+.calc-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.calc-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.calc-title .sub-title {
+    color: #2563eb;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.calc-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.calc-title p {
+    color: #94a3b8;
+    margin-top: 10px;
+}
+
+.calc-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background: #0f172a;
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.calc-options {
+    flex: 1.4;
+}
+
+.option-group {
+    margin-bottom: 35px;
+}
+
+.option-group h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* রেডিও বাটনগুলোকে সুন্দর কার্ড বানানোর ট্রিক */
+.radio-tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.tile-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.tile-card input {
+    position: absolute;
+    opacity: 0;
+}
+
+.tile-content {
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tile-icon {
+    font-size: 24px;
+}
+
+.tile-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* সিলেক্ট করলে ব্লু গ্লো হবে */
+.tile-card input:checked + .tile-content {
+    border-color: #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+}
+
+/* চেক বক্স স্টাইল */
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+}
+
+.check-item input {
+    accent-color: #2563eb;
+    width: 18px;
+    height: 18px;
+}
+
+/* রাইট সাইড প্রাইস ডিসপ্লে */
+.calc-result-box {
+    flex: 1;
+    background: #1e293b;
+    border-radius: 15px;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.result-header {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #64748b;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.result-price {
+    font-size: 54px;
+    font-weight: 800;
+    color: #2563eb;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.result-note {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.calc-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.calc-btn:hover {
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+    transform: translateY(-2px);
+}
+
+/* রেসপন্সিভ */
+@media (max-width: 768px) {
+    .calc-wrapper {
+        flex-direction: column;
+        padding: 25px;
+    }
+    .radio-tiles {
+        grid-template-columns: 1fr;
+    }
+}
 /* --- Approach Section --- */
 .approach-sec {
     padding: 30px 0 70px;
