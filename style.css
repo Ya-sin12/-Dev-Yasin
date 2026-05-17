@@ -223,7 +223,7 @@ nav {
     color: #9ca3af;
     font-size: 1rem;
 }
-/* Personal Info Section Styling */
+/* Personal Info Section - Clean Master Box Style */
 .personal-info-sec {
     padding: 60px 0;
     color: #ffffff;
@@ -233,20 +233,29 @@ nav {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* নতুন মাস্টার কার্ড স্টাইল যা পুরো সেকশনকে বক্সে নিয়ে আসবে */
+.personal-master-card {
+    background: #0f172a; /* আপনার সাইটের মেইন কার্ড কালার */
+    border: 1px solid rgba(37, 99, 235, 0.15); /* হালকা গ্লোয়িং নীল বর্ডার */
+    border-radius: 20px; /* মডার্ন রাউন্ডেড কর্নার */
+    padding: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* বাম পাশের ডেসক্রিপশন */
 .personal-bio {
-    flex: 1;
+    flex: 1.1; /* ডেসক্রিপশন পড়তে যেন একটু চওড়া জায়গা পায় */
 }
 
 .personal-bio .sub-title {
-    color: #2563eb; /* আপনার লোগো ও বাটনের নীল কালার */
-    font-size: 14px;
+    color: #2563eb;
+    font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
@@ -255,15 +264,16 @@ nav {
 }
 
 .personal-bio h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 34px;
+    margin-bottom: 18px;
     font-weight: 700;
 }
 
 .personal-bio p {
-    color: #94a3b8; /* হালকা গ্রে টেক্সট যা পড়ার জন্য আরামদায়ক */
+    color: #94a3b8;
     line-height: 1.7;
     font-size: 16px;
+    margin: 0;
 }
 
 /* ডান পাশের গ্রিড লেআউট */
@@ -271,52 +281,61 @@ nav {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
 }
 
-/* আপনার বাকি কার্ডগুলোর সাথে ম্যাচিং ডার্ক বক্স */
+/* ভেতরের ছোট বক্সগুলো যা এখন ব্যাকগ্রাউন্ডের চেয়ে সামান্য লাইট হবে */
 .info-box {
-    background: #0f172a; /* আপনার সাইটের কার্ডের ব্যাকগ্রাউন্ড */
-    padding: 20px;
+    background: #1e293b; /* একটু লাইট ডার্ক যাতে শেড বোঝা যায় */
+    padding: 18px;
     border-radius: 12px;
-    border: 1px solid rgba(37, 99, 235, 0.1); /* হালকা নীল বর্ডার */
+    border: 1px solid rgba(255, 255, 255, 0.03);
     transition: all 0.3s ease;
 }
 
-/* মাউস নিলে হালকা গ্লো করবে যেমনটা বাকি কার্ডে হচ্ছে */
 .info-box:hover {
     border-color: #2563eb;
-    box-shadow: 0 0 20px rgba(37, 99, 235, 0.15);
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    background: #1e293b;
 }
 
 .info-label {
     display: block;
     color: #64748b;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     font-weight: 600;
 }
 
 .info-value {
     display: block;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
+    word-break: break-all; /* বড় ইমেইল যেন বক্সের বাইরে না যায় */
 }
 
-/* মোবাইল ও ট্যাবলেটের জন্য রেসপন্সিভ */
-@media (max-width: 768px) {
-    .personal-container {
+/* মোবাইল ও ট্যাবলেটের জন্য ফুল রেসপন্সিভ */
+@media (max-width: 991px) {
+    .personal-master-card {
         flex-direction: column;
-        gap: 40px;
+        align-items: flex-start;
+        gap: 35px;
+        padding: 30px;
     }
     .personal-grid {
         width: 100%;
-        grid-template-columns: 1fr; /* মোবাইলে একটির নিচে আরেকটি আসবে */
     }
 }
+
+@media (max-width: 576px) {
+    .personal-grid {
+        grid-template-columns: 1fr; /* মোবাইলে একটির নিচে আরেকটি */
+    }
+}
+
+
 
 /* --- Approach Section --- */
 .approach-sec {
