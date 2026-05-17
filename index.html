@@ -132,6 +132,67 @@
         </div>
     </div>
 </section>
+    <section class="calculator-sec">
+    <div class="calc-container">
+        <div class="calc-title">
+            <span class="sub-title">Instant Estimate</span>
+            <h2>Estimate Your Project Budget</h2>
+            <p>Select your requirements below to get a quick estimate for your next project.</p>
+        </div>
+
+        <div class="calc-wrapper">
+            <div class="calc-options">
+                <div class="option-group">
+                    <h3>1. Choose Website Type</h3>
+                    <div class="radio-tiles">
+                        <label class="tile-card">
+                            <input type="radio" name="web_type" value="150" checked onchange="calculateBudget()">
+                            <div class="tile-content">
+                                <span class="tile-icon">📄</span>
+                                <span class="tile-text">Landing Page</span>
+                            </div>
+                        </label>
+                        <label class="tile-card">
+                            <input type="radio" name="web_type" value="300" onchange="calculateBudget()">
+                            <div class="tile-content">
+                                <span class="tile-icon">🏢</span>
+                                <span class="tile-text">Business Site</span>
+                            </div>
+                        </label>
+                        <label class="tile-card">
+                            <input type="radio" name="web_type" value="500" onchange="calculateBudget()">
+                            <div class="tile-content">
+                                <span class="tile-icon">🛒</span>
+                                <span class="tile-text">E-Commerce</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="option-group">
+                    <h3>2. Additional Features (Optional)</h3>
+                    <div class="checkbox-list">
+                        <label class="check-item">
+                            <input type="checkbox" id="feat_seo" value="50" onchange="calculateBudget()">
+                            <span class="check-text">SEO Optimization (+$50)</span>
+                        </label>
+                        <label class="check-item">
+                            <input type="checkbox" id="feat_speed" value="40" onchange="calculateBudget()">
+                            <span class="check-text">Speed Optimization (+$40)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc-result-box">
+                <div class="result-header">Estimated Price</div>
+                <div class="result-price">$<span id="project-price">150</span></div>
+                <p class="result-note">*This is an approximate estimate. Final pricing may vary based on exact project scope.</p>
+                <a href="#contact" class="calc-btn">Book a Call Now</a>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- ছোট ইউনিক সেকশন: My Approach -->
 <section class="approach-sec container">
     <div class="approach-card">
