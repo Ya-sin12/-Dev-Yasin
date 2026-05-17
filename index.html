@@ -251,7 +251,23 @@
     menu.addEventListener('click', function() {
         menuLinks.classList.toggle('active');
     });
-</script>s
+</script>
+    <script>
+function calculateBudget() {
+    // ১. মেইন ওয়েবসাইট টাইপ এর ভ্যালু নেওয়া
+    let basePrice = parseInt(document.querySelector('input[name="web_type"]:checked').value);
+    
+    // ২. এডিশনাল ফিচারের ভ্যালু চেক করা
+    let seoPrice = document.getElementById('feat_seo').checked ? parseInt(document.getElementById('feat_seo').value) : 0;
+    let speedPrice = document.getElementById('feat_speed').checked ? parseInt(document.getElementById('feat_speed').value) : 0;
+    
+    // ৩. টোটাল হিসাব করা
+    let totalPrice = basePrice + seoPrice + speedPrice;
+    
+    // ৪. স্ক্রিনে লাইভ আপডেট করা
+    document.getElementById('project-price').innerText = totalPrice;
+}
+</script>
 
 </body>
 </html>
