@@ -87,25 +87,28 @@
     });
 </script>
     <script>
-    function filterProjects(category) {
-    // ১. একটিভ বাটনের কালার চেঞ্জ করা
+function filterProjects(category) {
+    // ১. একটিভ বাটনের ভিজ্যুয়াল ক্লাস ঠিক করা
     const buttons = document.querySelectorAll('.filter-btn');
     buttons.forEach(btn => btn.classList.remove('active'));
+    
+    // কারেন্ট টার্গেট বাটনটিকে একটিভ করা
     event.currentTarget.classList.add('active');
 
-    // ২. p-card গুলো ফিল্টার করা
+    // ২. p-card গুলো ফিল্টার করার আসল ম্যাজিক
     const cards = document.querySelectorAll('.p-card');
     
     cards.forEach(card => {
         const cardCategories = card.getAttribute('data-category');
         
-        if (category === 'all' || cardCategories.includes(category)) {
+        // নিখুঁতভাবে সিঙ্গেল শব্দ ম্যাচ করার লজিক
+        if (category === 'all' || (cardCategories && cardCategories.split(' ').includes(category))) {
             card.classList.remove('hide');
         } else {
             card.classList.add('hide');
         }
     });
 }
-    </script>
+</script>
 </body>
 </html>
