@@ -29,10 +29,21 @@
 
     <section class="projects container">
         <h2 class="sec-title">Featured <span>Works.</span></h2>
+        <div class="project-filter-wrapper">
+    <button class="filter-btn active" onclick="filterProjects('all')">
+        ✨ All Works <span class="filter-count">2</span>
+    </button>
+    <button class="filter-btn" onclick="filterProjects('wordpress')">
+        🌐 WordPress <span class="filter-count">1</span>
+    </button>
+    <button class="filter-btn" onclick="filterProjects('elementor')">
+        ⚡ Elementor <span class="filter-count">2</span>
+    </button>
+</div>
         
         <div class="p-grid">
             <!-- ১ম প্রোজেক্ট: রেস্টুরেন্ট সাইট -->
-            <div class="p-card">
+            <div class="p-card" data-category="wordpress elementor">
                 <img src="restaurant-site.webp" loading="lazy" decoding="async" alt="Premium Restaurant Site">
                 <div class="p-info">
                     <h3>Premium Restaurant Site</h3>
@@ -42,7 +53,7 @@
             </div>
 
             <!-- ২য় প্রোজেক্ট: অন্য পোর্টফোলিও সাইট -->
-            <div class="p-card">
+            <div class="p-card" data-category="elementor">
                  <img src="portfolio-v2.webp" loading="lazy" decoding="async" alt="Secondary Portfolio Site">
                 <div class="p-info">
                     <h3>Secondary Portfolio Site</h3>
@@ -74,6 +85,27 @@
     menu.addEventListener('click', function() {
         menuLinks.classList.toggle('active');
     });
-</script>s
+</script>
+    <script>
+    function filterProjects(category) {
+    // ১. একটিভ বাটনের কালার চেঞ্জ করা
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+
+    // ২. p-card গুলো ফিল্টার করা
+    const cards = document.querySelectorAll('.p-card');
+    
+    cards.forEach(card => {
+        const cardCategories = card.getAttribute('data-category');
+        
+        if (category === 'all' || cardCategories.includes(category)) {
+            card.classList.remove('hide');
+        } else {
+            card.classList.add('hide');
+        }
+    });
+}
+    </script>
 </body>
 </html>
