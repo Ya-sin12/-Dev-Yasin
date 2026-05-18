@@ -871,6 +871,84 @@ footer {
 }
 
 .view-btn:hover { background: var(--p); color: #fff; }
+/* Project Filter Section - Complete Styling */
+.project-filter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: -10px auto 50px auto;
+    padding: 10px;
+}
+
+.filter-btn {
+    background: #0f172a; /* আপনার সাইটের কার্ড ব্যাকগ্রাউন্ড কালার */
+    color: #94a3b8;
+    border: 1px solid rgba(37, 99, 235, 0.15); /* হালকা গ্লোয়িং নীল বর্ডার */
+    padding: 12px 24px;
+    border-radius: 30px; /* মডার্ন পিল বা ওভাল আকৃতির বাটন */
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* মাউস হোভার করলে বা বাটনটি একটিভ থাকলে নীল গ্লো করবে */
+.filter-btn:hover, .filter-btn.active {
+    color: #ffffff;
+    border-color: #2563eb;
+    background: rgba(37, 99, 235, 0.1);
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.25);
+}
+
+/* বাটনের ভেতরের ছোট কাউন্টার নম্বর ব্যাকগ্রাউন্ড */
+.filter-count {
+    background: #1e293b;
+    color: #2563eb;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.filter-btn.active .filter-count {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+/* কার্ডগুলো হাইড এবং শো হওয়ার স্মুথ অ্যানিমেশন ট্রানজিশন */
+.p-card {
+    transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+}
+
+/* যখন ফিল্টারে মিলবে না, তখন কার্ড এই স্টাইলে স্মুথলি গায়েব হবে */
+.p-card.hide {
+    transform: scale(0.8);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    overflow: hidden;
+}
+
+/* মোবাইল রেসপন্সিভ (বাটনগুলো স্ক্রিন ছোট হলে সুন্দরভাবে ভেঙে নিচে আসবে) */
+@media (max-width: 576px) {
+    .project-filter-wrapper {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .filter-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+}
 
 /* --- About Section Styling --- */
 .about-sec { padding: 80px 0; }
