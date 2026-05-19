@@ -1165,22 +1165,38 @@ footer {
     font-weight: 500;
 }
 @media (min-width: 992px) {
-    /* Tools এবং Skills পাশাপাশি করার জন্য */
+    /* ১. পুরো র‍্যাপারকে সুন্দরভাবে ডানে-বামে ভাগ করা */
     .skills-and-tools-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 60px;
+        gap: 50px;
         max-width: 1200px;
         margin: 60px auto;
         padding: 0 20px;
+        align-items: start;
     }
-    /* What I Offer কার্ডগুলো ৪টি পাশাপাশি করার জন্য */
+
+    /* ২. Tools সেকশনের ভেতরের আইটেমগুলোকে মাঝখানে আনা */
+    .tools-flex {
+        justify-content: center !important;
+        max-width: 450px;
+        margin: 0 auto !important;
+    }
+
+    /* ৩. My Expertise গ্রিডকে সমানভাবে সাজানো */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr) !important; /* ডানে ২টি বামে ২টি বক্স */
+        max-width: 450px;
+        margin: 0 auto !important;
+    }
+
+    /* ৪. What I Offer কার্ডগুলো ৪টি পাশাপাশি করা */
     .services-grid {
         grid-template-columns: repeat(4, 1fr) !important;
     }
 }
 
-/* সার্ভিস কার্ডের হাইট প্রবলেম ফিক্স */
+/* ৫. কার্ডের ভেতরের কন্টেন্ট কেটে যাওয়া ফিক্স */
 .service-card {
     height: 100% !important;
 }
