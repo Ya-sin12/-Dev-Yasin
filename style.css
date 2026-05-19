@@ -1173,13 +1173,16 @@ footer {
         max-width: 1200px;
         margin: 60px auto;
         padding: 0 20px;
-        align-items: start;
+        align-items: center;
     }
 
     /* ২. Tools সেকশনের ভেতরের আইটেমগুলোকে মাঝখানে আনা */
     .tools-flex {
+        display: flex !important;
+        flex-direction: row !important;
         justify-content: center !important;
-        max-width: 450px;
+        flex-wrap: nowrap !important;
+        max-width: 100% !important;
         margin: 0 auto !important;
     }
 
