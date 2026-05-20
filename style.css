@@ -1175,6 +1175,14 @@ footer {
         padding: 0 20px;
         align-items: start;
     }
+    .tools-section {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    .skills-section {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
 
     /* ২. Tools সেকশনের ভেতরের আইটেমগুলোকে মাঝখানে আনা */
     .tools-flex {
